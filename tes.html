@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <input type="text" name="nilai" id="nilai">
+    <button onclick="liat()">hasil</button>
+
+    <h2 id="hasil"></h2>
+    
+    <script>
+        let nilai = document.getElementById('nilai');
+        let hasil = document.getElementById('hasil');
+        
+        function liat() {
+            
+            if (nilai.value < 80)  {
+                hasil.innerHTML = 'gblk';
+            }
+            else{
+                hasil.innerHTML = 'pinter';
+    
+            }
+        }
+    </script>
+</body>
+</html>
